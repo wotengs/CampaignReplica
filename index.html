@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>I&M Bank Club Account</title>
+</head>
+<body>
+    <!-- Requirement 1: Background image -->
+    <div class="background-container">
+
+        <!-- Requirement 2: Fading black color -->
+        <div class="black-overlay"></div>
+
+        <!-- Requirement 3: Top left text -->
+        <a href="https://www.imbankgroup.com/ke/"  class="top-left-text">Visit I&M bank official Website</a>
+
+        <!-- Requirement 4: Top right logo -->
+        <a href="https://www.imbankgroup.com/ke/" class="top-right-logo">
+            <img src="./images/logo.png" alt="I&M Bank Logo" class="top-right-img">
+        </a>
+
+        <!-- Requirement 5: Center image and bolded text -->
+        <div class="center-container">
+            <img src="images/i.png" alt="Welcome Image" class="welcome-image">
+            <div class="welcome-text">
+                <p>Welcome</p>
+                <p>To The Club Account</p>
+                <p>Almost there! Please select how you would like to receive your card.</p>
+            </div>
+            <p class="hashtag-text">#StayWinning</p>
+
+            <!-- Requirement 8-11: Floating Island and Buttons -->
+            <div class="floating-island">
+                <img src="./images/logo.png" alt="Floating Logo" class="floating-logo">
+                <p class="prompt-text">How would you like to collect your card?</p>
+                <button id="courier-btn" onclick="selectOption('courier')"> 
+                    <img src="./images/bike-icon.png" alt="Bike Icon"> Deliver via courier
+                </button>
+                <button id="pickup-btn" onclick="selectOption('pickup')">
+                    <img src="./images/pin-icon.png" alt="Pin Icon"> Select pickup branch
+                </button>
+
+                <!-- Requirement 11: Checkbox and Terms -->
+                <div class="terms-container">
+                    <input type="checkbox" id="terms-checkbox">
+                    <label for="terms-checkbox">By clicking this button you agree to the <a href="https://www.imbankgroup.com/ke/terms-and-conditions/" target="_blank">terms and conditions</a> and the privacy policy</label>
+                </div>
+
+                <!-- Requirement 12: Submit Button -->
+                <button id="submit-btn" onclick="submitForm()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

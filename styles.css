@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background-container {
+    position: relative;
+    background: url('./images/center-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    max-width: 100%; /* Limit background container width */
+    height: 100vh;
+    overflow: hidden;
+}
+
+.black-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.top-left-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.top-right-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    width: 100px; /* Adjust the width as needed for a 500x500 image */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 15%; /* Set a maximum width */
+    max-height: 100px; /* Set a maximum height */
+}
+.top-right-img {
+    width: 100px; /* Adjust the width as needed */
+    height: 100%; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed the container */
+    max-height: 100px; /* Set a maximum height */
+}
+
+.center-container {
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Adjust the left position */
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+}
+
+.welcome-image {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hashtag-text {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.floating-island {
+    position: absolute;
+    top: 55%;
+    left: 90%; /* Adjust the left position */
+    width: 60%;
+    transform: translate(-50%, -50%);
+    background: white;
+    height: 130%;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+}
+.floating-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 70px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 80%; /* Ensure it doesn't exceed the container */
+    max-height: 80px; /* Set a maximum height */
+}
+.prompt-text {
+    position: absolute;
+    top: 10px;
+    left: 90px; /* Adjust the left position */
+    text-align: left;
+    font-size: 16px; /* Adjust the font size as needed */
+    margin-left: 10px; /* Add margin for spacing */
+    color: black; /* Set text color to black */
+}
+
+button {
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.terms-container {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+#submit-btn {
+    background-color: blue;
+    color: white;
+}
+
+#submit-btn.clicked {
+    background-color: white;
+    color: blue;
+}
