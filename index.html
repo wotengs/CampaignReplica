@@ -25,22 +25,32 @@
         <div class="center-container">
             <img src="images/i.png" alt="Welcome Image" class="welcome-image">
             <div class="welcome-text">
-                <p>Welcome</p>
-                <p>To The Club Account</p>
-                <p>Almost there! Please select how you would like to receive your card.</p>
+                <p>Welcome To</p>
+                <p>the Club</p>
+                <p>Account</p>
             </div>
+                <div class="sub-text">
+                    <p>Almost there! Please select how</p> 
+                    <p> you would like to receive your card.</p>
+                </div>
+            <div>
             <p class="hashtag-text">#StayWinning</p>
+            </div>
+        </div>
 
             <!-- Requirement 8-11: Floating Island and Buttons -->
             <div class="floating-island">
                 <img src="./images/logo.png" alt="Floating Logo" class="floating-logo">
                 <p class="prompt-text">How would you like to collect your card?</p>
-                <button id="courier-btn" onclick="selectOption('courier')"> 
-                    <img src="./images/bike-icon.png" alt="Bike Icon"> Deliver via courier
-                </button>
-                <button id="pickup-btn" onclick="selectOption('pickup')">
-                    <img src="./images/pin-icon.png" alt="Pin Icon"> Select pickup branch
-                </button>
+                
+                <div class="button-container">
+                    <button id="courier-btn" onclick="selectOption('courier')"> 
+                        <img src="./images/bike-icon.png" alt="Bike Icon"> Deliver via courier
+                    </button>
+                    <button id="pickup-btn" onclick="selectOption('pickup')">
+                        <img src="./images/pin-icon.png" alt="Pin Icon"> Select pickup branch
+                    </button>
+                </div>
 
                 <!-- Requirement 11: Checkbox and Terms -->
                 <div class="terms-container">
@@ -51,7 +61,7 @@
                 <!-- Requirement 12: Submit Button -->
                 <button id="submit-btn" onclick="submitForm()">Submit</button>
             </div>
-        </div>
+        
     </div>
 
     <script src="./script.js"></script>
