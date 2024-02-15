@@ -69,10 +69,14 @@ body {
     left: 10%; /* Adjust the left position */
     width: 80%;
     font-weight: bold; /* Make the text bold */
+    font-size: large;
+    line-height: 0.1cm; /* Adjust line height */
 }
 
 .sub-text {
     margin-top: 10px; /* Adjust the spacing between lines */
+    left: 60%;
+    line-height: 0.1cm; /* Adjust line height */
 }
 
 .hashtag-text {
