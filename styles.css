@@ -50,52 +50,55 @@ body {
 .center-container {
     position: absolute;
     top: 50%;
-    left: 55%; /* Adjust the left position */
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: left;
     color: white;
     width: 50%;
     height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .welcome-image {
-    width: 150px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 150px;
+    height: auto;
 }
 
 .welcome-text {
     position: absolute;
     top: 20%;
-    left: 10%; /* Adjust the left position */
-    width: 80%;
-    font-weight: bold; /* Make the text bold */
+    left: 10%;
+    font-weight: bold;
     font-size: large;
-    line-height: 0.1cm; /* Adjust line height */
+    line-height: 0.5;
+    z-index: 1; /* Ensure the welcome text is above other elements */
 }
 
 .sub-text {
-    margin-top: 10px; /* Adjust the spacing between lines */
-    left: 60%;
-    line-height: 0.1cm; /* Adjust line height */
+    position: absolute;
+    top: 83%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+    width: 50%;
+    height: 50%;
+    line-height: 0.1;
 }
-
-.hashtag-text {
-    margin-top: 10px; /* Adjust the spacing between lines */
-    font-size: 18px; /* Adjust the font size as needed */
-}
-
 
 .floating-island {
     position: absolute;
     top: 90%;
-    left: 75%; /* Adjust the left position */
+    left: 68%; /* Adjust the left position */
     width: 25%;
     transform: translate(-50%, -50%);
     background: white;
     margin-bottom: 20%;
-    height: 130%;
+    height: 120%;
     border-radius: 15px;
-    padding: 5px;
+    padding: 3px;
     text-align: center;
 }
 .floating-logo {
@@ -129,7 +132,7 @@ button {
     align-items: center; /* Align items vertically (center the icon and text) */
     justify-content: space-between; /* Space out items in the button */
     margin-top: 10px;
-    padding: 30px;
+    padding: 20px;
     width: 85%;
     font-size: 16px;
     cursor: pointer;
